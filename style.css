@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.826) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+.nav-links{
+    display: flex;
+    gap:30px;
+}
+.nav-links :hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.toggle{
+    display: none;
+}
+.sidebar{
+    background-color: #1D232C;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+    padding: 20px;
+    margin-top: 70px;
+    color: white;
+    display: none;
+    transition:5s;
+}
+.sidebar-link{
+    margin-bottom: 20px;
+    
+}
+.sidebar-links :hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    gap:30px;
+}
+#btn{
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: aliceblue;
+    border-radius: 5px;
+}
+#btn:hover{
+    cursor: pointer;
+
+}
+.header{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.shopping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+.Experiences{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+
+}
+.Experiences div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.heading{
+    padding:10px;
+    margin-left: 10px;
+}
+.New-Arrivals{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.Arrival img{
+    width: 250px;
+    height: 300px;
+}
+.Arrival {
+    position: relative;
+
+}
+
+.New-Arrivals button{
+    padding:15px;
+    background-color:white;
+    border-radius: 5px;
+    position: absolute;
+    top:60%;
+    left: 20%;
+    font-size: 18px;
+    border:none;
+}
+.New-Arrivals button,img:hover{
+    cursor: pointer;
+}
+.News-letter{
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.News-letter h2{
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+.input{
+    width:75%;
+    border:solid black 3px;
+    margin-top: 15px;
+    padding:10px;
+    font-size: 18px;
+}
+#subscribe{
+    padding:15px;
+    background-color:#1D232C;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}
+#subscribe:hover{
+    cursor: pointer;
+}
+.footer{
+    background-color: #1D232C;
+    margin-top: 20px;
+    padding:40px;
+    color: #F2F4F7;
+}
+.Shirt-section{
+    margin-top: 40px;
+}
+.Section{
+        width: 80%;
+        border:solid black 2px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+    }
+    .Section input{
+        border: none;
+        background-color: transparent;
+        width: 100%;
+     }
+     .Section input:focus{
+        outline: none;
+     }
+.collections{
+    padding:20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Shirt{
+    text-align: center;
+    flex-basis: 20%;
+}
+.Shirt img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+.Shirt img:hover{
+    cursor: pointer;
+}
+.contact{
+    margin: auto;
+    background-color: #1D232C;
+    width: 50%;
+    height:60%;
+    padding:50px;
+    margin-top: 30px;
+    color: #F2F4F7;
+
+}
+.title{
+    margin-top: 30px;
+    font-size: 18px;
+}
+table{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+table td{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+table input{
+    width: 700px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+}
+table input:focus{
+    outline: none;
+}
+#contact-submit{
+    background-color: blue;
+    padding: 20px;
+    color: #F2F4F7;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#contact-submit:hover{
+    cursor: pointer;
+
+}
+
+
+/* mediaqueries */
+@media screen and (max-width:600px){
+    .toggle{
+        display:block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .Experiences{
+        flex-direction: column;
+    }
+    .contact input{
+        width: 250px;
+        
+    }
+}
